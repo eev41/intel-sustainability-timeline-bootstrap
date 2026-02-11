@@ -125,7 +125,7 @@ header::after {
   bottom: 0;
   left: 0;
   z-index: 1;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
   opacity: 0;
 }
 
@@ -210,4 +210,19 @@ header::after {
   #instruction-mobile {
     display: inherit;
   }
+}
+
+/* Bootstrap Overrides */
+.override button, input, a {
+  font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #0071c5;
+  transition: all 0.4s ease;
+}
+
+.override a:hover,button:hover {
+  background-color: #00C7FD;
 }

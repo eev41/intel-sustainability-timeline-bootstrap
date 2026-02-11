@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="auto">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Intel: Sustainability Through the Ages</title>
   <link rel="stylesheet" href="style.css"/>
-</head>
+  <!-- Utilities-only: class-based styles without global resets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap-utilities.rtl.min.css" crossorigin="anonymous" />
+  </head>
 <body>
-
   <!-- Header / Hero Section -->
   <header>
     <div>
       <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank">
+      <a href="https://www.intel.com/content/www/us/en/homepage.html">
         <img src="img/intel-header-logo.svg" alt="Intel Logo"/>
       </a>
       <!-- Main Heading -->
@@ -30,11 +31,11 @@
   </header>
 
   <!-- Timeline Cards Section -->
-  <section class="card-container">
+  <main class="card-container">
 
     <!-- Card 1: 1968 -->
     <div class="card first" tabindex="0">
-      <img src="img/1.jpg"/>
+      <img src="img/1.jpg" alt="Drawing of scientists working in early computer lab"/>
       <h2>1968</h2>
       <h3>Intel Founded</h3>
       <!-- Add image -->
@@ -47,7 +48,7 @@
 
     <!-- Card 2: 1971 -->
     <div class="card" tabindex="0">
-      <img src="img/2.jpg"/>
+      <img src="img/2.jpg" alt="Image of Intel 4004 Microprocessor"/>
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
       <!-- Add image -->
@@ -60,7 +61,7 @@
 
     <!-- Card 3: 1978 -->
     <div class="card" tabindex="0">
-      <img src="img/3.jpg"/>
+      <img src="img/3.jpg" alt="Image of Intel 8086 Processor"/>
       <h2>1978</h2>
       <h3>8086 Processor</h3>
       <!-- Add image -->
@@ -72,7 +73,7 @@
 
     <!-- Card 4: 1985 -->
     <div class="card" tabindex="0">
-      <img src="img/4.jpg"/>
+      <img src="img/4.jpg" alt="Image of Intel 386 Processor"/>
       <h2>1985</h2>
       <h3>386 Processor</h3>
       <!-- Add image -->
@@ -85,7 +86,7 @@
 
     <!-- Card 5: 2006 -->
     <div class="card" tabindex="0">
-      <img src="img/5.jpg"/>
+      <img src="img/5.jpg" alt="Photo of large greenhouse gas plumes rising from factory chimneys"/>
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
       <!-- Add image -->
@@ -99,7 +100,7 @@
 
     <!-- Card 6: 2020 -->
     <div class="card" tabindex="0">
-      <img src="img/6.jpg"/>
+      <img src="img/6.jpg" alt="Photo of hydropower plant spillway flowing with water"/>
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
       <!-- Add image -->
@@ -112,7 +113,7 @@
 
     <!-- Card 7: 2022 -->
     <div class="card" tabindex="0">
-      <img src="img/7.jpg"/>
+      <img src="img/7.jpg" alt="Photo of hydropower plant spillway flowing with water"/>
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
       <!-- Add image -->
@@ -125,7 +126,7 @@
 
     <!-- Card 8: 2023 -->
     <div class="card" tabindex="0">
-      <img src="img/8.jpg"/>
+      <img src="img/8.jpg" alt="Photo of wind turbines scattered across fields"/>
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
       <!-- Add image -->
@@ -138,7 +139,7 @@
 
     <!-- Card 9: 2024 -->
     <div class="card last" tabindex="0">
-      <img src="img/9.jpg"/>
+      <img src="img/9.jpg" alt="Photo of man speaking into microphone in a full auditorium"/>
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
       <!-- Add image -->
@@ -148,8 +149,78 @@
         next-generation sustainable semiconductor manufacturing.
       </p>
     </div>
-  </section>
+  </main>
   <p id="instruction">Scroll to view timeline | Hover over cards to learn more</p>
   <p id="instruction-mobile">Scroll to view timeline | Tap cards to learn more</p>
+
+  <!-- 3-Column Content Section -->
+  <section class="p-4 rounded my-5 three-col-section container override">
+    <!-- The row holds the columns -->
+    <div class="row">
+      <!-- Column 1: full width on small screens, 1/3 on medium+ -->
+      <div class="p-3 bg-white rounded mb-4 col-12 col-md-4">
+        <h2 class="mb-3">RISE Strategy</h2>
+        <p>
+          Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
+          Intel sets ambitious 2030 goals, including driving industry-wide 
+          progress on climate action, water stewardship, and waste reduction.
+        </p>
+        <!-- Simple link styled by our local CSS -->
+        <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html" class="d-inline-block px-3 py-2 text-white text-decoration-none rounded mt-2">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="p-3 bg-white rounded mb-4 col-12 col-md-4">
+        <h2 class="mb-3">Commitment</h2>
+        <p>
+          In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
+          (Scope 1 and 2) by 2040. This commitment builds on decades of 
+          environmental initiatives and partnerships across the semiconductor 
+          industry.
+        </p>
+        <a href="https://www.intc.com/news-events/press-releases/detail/1539/intel-commits-to-net-zero-greenhouse-gas-emissions-in-its" class="d-inline-block px-3 py-2 text-white text-decoration-none rounded mt-2">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="p-3 bg-white rounded mb-0 col-12 col-md-4">
+        <h2 class="mb-3">Water &amp; Waste</h2>
+        <p>
+          Intel conserves billions of gallons of water annually and 
+          collaborates with local communities to restore watersheds.
+          Intel also upcycles and recycles materials to reduce waste and 
+          advance a circular economy.
+        </p>
+        <a href="https://www.intel.com/content/www/us/en/policy/policy-water.html" class="text-white text-decoration-none px-3 py-2 rounded mt-2 d-inline-block">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Form -->
+  <section class="container mb-5">
+    <h2 class="mb-3 text-center text-white">Subscribe to our Newsletter</h2>
+
+    <!-- Simple subscription form -->
+    <form class="d-flex flex-column gap-2 override" action="#" method="post">
+      <!-- Email label and input -->
+      <label for="email" class="fw-bold mx-4 text-white">Email</label>
+      <input id="email" name="email" type="email" placeholder="address@domain.com" class="p-2 bg-white border-0 rounded mx-4" required/>    
+
+      <!-- Submit button -->
+      <button type="submit" class="text-white px-3 py-2 border-0 rounded my-3 mx-auto w-50 .d-flex">
+        Subscribe
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+   <footer class="text-white text-center mb-4 container">
+      © Intel Corporation
+   </footer>
 </body>
 </html>
